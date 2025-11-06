@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f4; 
+    margin: 20px;
+    color: #333;
+}
+
+#contenedor-productos {
+    display: grid; /* Usamos Grid para organizar las tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas que se ajustan */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px 0;
+}
+
+/* Estilos para cada tarjeta de producto */
+.productos-card {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+
+
+
+.productos-card img {
+    max-width: 100%; /* Asegura que la imagen no se salga de la tarjeta */
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Para que las imágenes cubran el área sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 15px;
+}
+
+.productos-card h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #5a3e36; /* Un color marrón suave para el título */
+}
+
+.productos-card p {
+    font-size: 0.95em;
+    color: #666;
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible */
+    margin-bottom: 15px;
+}
+
+
+.productos-card button:hover {
+    background-color: #a0522d; /* Un tono más claro al pasar el mouse */
+}
